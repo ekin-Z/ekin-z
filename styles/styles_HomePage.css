@@ -132,11 +132,6 @@ nav.menu ul li a:hover {
     animation: loop 2s infinite;
   }
 
-@media (max-width: 1024px) {
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
-    }
-}
 
 /* Responsive Header Styles */
 @media (max-width: 768px) {
