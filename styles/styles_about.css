@@ -81,12 +81,13 @@ nav.menu ul li a:hover {
     font-size: 20px; /* Controls the font size of the p */
     letter-spacing: 0.6px; /* Adjust the spacing between letters */
     color: black; /* Text color */
-    margin-top: 0px; /* Space above the p element */
+    margin-top: 20px; /* Space above the p element */
     margin-bottom: 100px; /* Space below the p element (before the next element) */
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     line-height: 1.2; /* Controls the line spacing within the p element */
     font-style: normal;
+    justify-content: center;
 }
 
 .chinese-text {
