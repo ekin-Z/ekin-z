@@ -1,0 +1,182 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Distributes space between logo and menu */
+    align-items: center; /* Vertically aligns items */
+    width: 100%;
+    height:auto;
+    padding: 0px 0px; /* Adjust padding for top, bottom, left, right */
+    background-color: #ffffff;
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px; /* Add space to the left of the logo */
+    order: 1;
+}
+
+/* Navigation Menu Styles */
+nav.menu {
+    margin-left: auto;
+    margin-right: auto; /* Adds margin on the right side of the menu */
+    order: 2;
+}
+
+nav.menu ul {
+    list-style: none; /* Removes default list styling */
+    padding:0px 100px 0px 0px;
+    display: flex; /* Aligns menu items horizontally */
+}
+
+nav.menu ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav.menu ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Text color */
+    font-size: 12px; /* Font size */
+    padding: 10px 15px; /* Padding inside the menu items */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+nav.menu ul li a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+
+/* Language Switcher Styles */
+.language-switcher {
+    margin-right: 50px; /* Adjust margin to position the language switcher */
+    white-space: nowrap;
+    font-size: 12px;
+    color: #b5b5b5;
+    order: 3;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #b5b5b5; /* Text color */
+}
+
+.language-switcher a:hover {
+    color: #333; /* Change color on hover */
+}
+
+
+/* Details Section */
+
+/* to control paragraphs text styles */
+.latin-text{
+    font-size: 20px; /* Controls the font size of the p */
+    letter-spacing: 0.6px; /* Adjust the spacing between letters */
+    color: black; /* Text color */
+    margin-bottom: 100px; /* Space below the p element (before the next element) */
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.2; /* Controls the line spacing within the p element */
+    font-style: normal;
+    justify-content: left;
+}
+
+.chinese-text {
+    font-size: 20px; /* Controls the font size of the p */
+    letter-spacing: 0.6px; /* Adjust the spacing between letters */
+    color: black; /* Text color */
+    margin-bottom: 100px; /* Space below the p element (before the next element) */
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.4; /* Controls the line spacing within the p element */
+    font-style: normal;
+    justify-content: left;
+}
+
+
+.details {
+    display: flex;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    min-width: 100px;
+    margin: 0px auto 0px; /* Adds space above the text box */
+    z-index: 1; /* Ensure the text box appears above other elements */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .details {
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .details {
+        margin:auto;
+    }
+    .chinese-text {
+        font-size: 16px;
+}
+
+/* Responsive Header Styles */
+@media (max-width: 768px) {
+    header {
+         flex-direction: column; /* Stack elements vertically */
+         align-items: center;
+     }
+
+    .logo {
+        max-width: 140px;
+        height: auto;
+        margin-left: auto; /* Add space to the left of the logo */
+        order: 1;
+    }
+
+    nav.menu {
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    nav.menu ul {
+        display: block; /* Stack menu items vertically */
+        text-align: center; /* Align menu items to the right */
+        padding:0;
+    }
+
+    nav.menu ul li {
+        margin-left: 0; /* Remove the space between menu items */
+        margin-bottom: 0px; /* Add space below each menu item */
+    }
+
+    nav.menu ul li a {
+        font-size: 25px; /* Increase font size for better readability on smaller screens */
+        display: inline-block; /* Ensure each link takes up its own line */
+        line-height: 0.6; /* Adjust this value to control line spacing */
+    }
+
+    .language-switcher {
+        white-space: nowrap;
+        display: block;
+        margin: 0px auto 30px;
+        font-size: 13px;
+        color: #b5b5b5;
+        order: 3;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 item per row on small screens */
+    }
+}

@@ -188,6 +188,7 @@ nav.menu ul li a:hover {
     .video-wrapper {
         margin-top: 0px;
     }
+}
 
 /* Responsive Header Styles */
 @media (max-width: 768px) {
