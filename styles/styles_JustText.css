@@ -82,8 +82,8 @@ nav.menu ul li a:hover {
     letter-spacing: 0.6px; /* Adjust the spacing between letters */
     color: black; /* Text color */
     margin-bottom: 100px; /* Space below the p element (before the next element) */
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     line-height: 1.2; /* Controls the line spacing within the p element */
     font-style: normal;
     justify-content: left;

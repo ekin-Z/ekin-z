@@ -81,6 +81,7 @@ nav.menu ul li a:hover {
 
 .video-container {
     max-width: 100%; /* Limit the width of the video */
+    height:500px;
     margin: 0 auto 0; /* Center the video on the page */
 }
 
